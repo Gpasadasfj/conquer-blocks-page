@@ -1,0 +1,22 @@
+@use "../abstracts/index" as *;
+
+.cursos_page {
+  margin-top: 1em;
+
+  &_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    &_item {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      &_img {
+        border-radius: 50px;
+      }
+    }
+  }
+}

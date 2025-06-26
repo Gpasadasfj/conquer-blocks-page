@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registro</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Pagina de registro de la academia ConquerBlocks"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <figure>
+        <img
+          src="img/logo-conquerblocks-color.png"
+          alt="Logo de ConquerBlocks"
+          class="main-header_img"
+        />
+      </figure>
+
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        <label for="menu-toggle" class="main-header-burguer">☰</label>
+        <ul class="main-header_nav">
+          <li>
+            <a class="main-header_nav_item" href="index.html">Home</a><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="quienes_somos.html"
+              >Quienes somos</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="cursos/cursos_index.html"
+              >Cursos</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="blog/blog_index.html">Blog</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="registro.html">Registro</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="login.html">Login</a><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <main>
+        <section class="registro_page">
+          <h1 class="registro_page_title">Registro</h1>
+          <h2 class="registro_page_title2">Introduzca sus datos:</h2>
+          <form
+            class="registro_page_form"
+            action=""
+            method="post"
+            name="datos_usuario"
+            enctype="multipart/form-data"
+            autocomplete="on"
+          >
+            <p class="registro_page_form_item">
+              <label for="nombre">Nombre:</label>
+              <input
+                class="registro_page_form_item_input"
+                type="text"
+                id="nombre"
+                name="nombre"
+              />
+            </p>
+            <p class="registro_page_form_item">
+              <label for="apellidos">Apellidos:</label>
+              <input
+                class="registro_page_form_item_input"
+                type="text"
+                id="apellidos"
+                name="apellidos"
+              />
+            </p>
+            <p class="registro_page_form_item">
+              <label for="fecha">Fecha de nacimiento:</label>
+              <input
+                class="registro_page_form_item_input"
+                type="date"
+                id="fecha"
+                name="fecha"
+              />
+            </p>
+            <p class="registro_page_form_item">
+              <label for="email">Email:</label>
+              <input
+                class="registro_page_form_item_input"
+                type="email"
+                id="email"
+                name="email"
+              />
+            </p>
+            <p class="registro_page_form_item">
+              <label for="direccion">Direccion:</label>
+              <input
+                class="registro_page_form_item_input"
+                type="text"
+                id="direccion"
+                name="direccion"
+              />
+            </p>
+            <p class="registro_page_form_item">
+              <label for="biografia">Biografia:</label>
+              <textarea
+                class="registro_page_form_item_input"
+                id="biografia"
+                rows="10"
+                cols="50"
+                name="biografia"
+              ></textarea>
+            </p>
+            <button class="registro_page_form_button button">Enviar</button>
+            <p class="registro_page_form_item">
+              <iframe
+                class="registro_page_form_item_iframe"
+                src="https://es.wikipedia.org/wiki/Wikipedia:Portada"
+                allow="fullscreen"
+                width="1400"
+                height="400"
+              ></iframe>
+            </p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer>Copyright © 2025 By ConquerX</footer>
+  </body>
+  <script type="module" src="/src/main.js"></script>
+</html>

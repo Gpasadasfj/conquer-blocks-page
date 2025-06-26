@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cursos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Indice de la pagina de cursos de ConquerBlocks"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <figure>
+        <img
+          src="../img/logo-conquerblocks-color.png"
+          alt="Logo de ConquerBlocks"
+          class="main-header_img"
+        />
+      </figure>
+
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        <label for="menu-toggle" class="main-header-burguer">☰</label>
+        <ul class="main-header_nav">
+          <li>
+            <a class="main-header_nav_item" href="../index.html">Home</a><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../quienes_somos.html"
+              >Quienes somos</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../cursos/cursos_index.html"
+              >Cursos</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../blog/blog_index.html"
+              >Blog</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../registro.html">Registro</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../login.html">Login</a><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <main>
+        <section class="cursos_page">
+          <h1 class="cursos_page_title">Cursos</h1>
+
+          <nav>
+            <ul class="cursos_page_nav">
+              <li class="cursos_page_nav_item">
+                <figure>
+                  <img
+                    class="cursos_page_nav_item_img"
+                    src="../img/full-stack-img.jpg"
+                    alt="Imagen del curso de Desarrollador Full Stack"
+                  />
+                </figure>
+                <a class="cursos_page_link button" href="curso_full_stack.html"
+                  >Curso de Desarrollo Full-Stack</a
+                ><br />
+              </li>
+
+              <li class="cursos_page_nav_item">
+                <figure>
+                  <img
+                    class="cursos_page_nav_item_img"
+                    src="../img/blockchain-img.png"
+                    alt="Imagen del curso de Desarrollo Blockchain"
+                  />
+                </figure>
+                <a class="cursos_page_link button" href="curso_blockchain.html"
+                  >Curso de Desarrollo Blockchain</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </main>
+    </div>
+
+    <footer>Copyright © 2025 By ConquerX</footer>
+  </body>
+  <script type="module" src="/src/main.js"></script>
+</html>

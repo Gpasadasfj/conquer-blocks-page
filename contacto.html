@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Página de contacto de la academia de ConquerBlocks"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <figure>
+        <img
+          src="img/logo-conquerblocks-color.png"
+          alt="Logo de ConquerBlocks"
+          class="main-header_img"
+        />
+      </figure>
+
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        <label for="menu-toggle" class="main-header-burguer">☰</label>
+        <ul class="main-header_nav">
+          <li>
+            <a class="main-header_nav_item" href="index.html">Home</a><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="quienes_somos.html"
+              >Quienes somos</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="cursos/cursos_index.html"
+              >Cursos</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="blog/blog_index.html">Blog</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="registro.html">Registro</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="login.html">Login</a><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <main>
+        <section class="contacto_page">
+          <h1 class="contacto_page_title">Contacto</h1>
+          <ul class="contacto_page_list">
+            <li>Email: javgarpas@gmail.com</li>
+            <li>Tel: 999 88 77 66</li>
+            <div class="contacto_page_list_buttons">
+              <li>
+                <a class="button" href="#">Instagram</a>
+              </li>
+              <li>
+                <a class="button" href="https://github.com/Gpasadasfj"
+                  >Github</a
+                >
+              </li>
+            </div>
+          </ul>
+
+          <form class="contacto_page_form" action="" method="get">
+            <div class="contacto_page_form_item">
+              <label for="nombre">Nombre:</label>
+              <input
+                class="contacto_page_form_item_input"
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+              />
+            </div>
+            <div class="contacto_page_form_item">
+              <label for="email">Correo electrónico:</label>
+              <input
+                class="contacto_page_form_item_input"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="contacto_page_form_item">
+              <label for="asunto">Asunto:</label>
+              <input
+                class="contacto_page_form_item_input"
+                type="text"
+                id="asunto"
+                name="asunto"
+              />
+            </div>
+            <div class="contacto_page_form_item">
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                class="contacto_page_form_item_input"
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button class="contacto_page_form_button button">Enviar</button>
+            <iframe
+              class="contacto_page_form_iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50860.99164053617!2d-3.6325574672040553!3d37.18093908797374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce62d32c27d%3A0x9258f79dd3600d72!2sGranada!5e0!3m2!1ses!2ses!4v1744740900737!5m2!1ses!2ses"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </form>
+        </section>
+      </main>
+
+      <aside>
+        <section class="aviso-legal">
+        <h2 class="aviso-legal_title">Aviso Legal</h2>
+        <h3 class="aviso-legal_terminos">Términos y condiciones</h3>
+        <h4 class="aviso-legal_aceptacion-terminos">
+          Aceptación de los Términos
+        </h4>
+        <p class="aviso-legal_subtitle">
+          Esta página fue actualizada por última vez el 1 de mayo de 2024.
+        </p>
+        Al acceder y utilizar este sitio web, usted acepta y se compromete a
+        cumplir con los siguientes términos y condiciones (los "Términos").
+        <p class="aviso-legal_subtitle">
+          Si no está de acuerdo con estos Términos, por favor no utilice nuestro
+          sitio web.
+        </p>
+
+        <h4 class="aviso-legal_info">‍Información de la Empresa</h4>
+        <p class="aviso-legal_info_data">
+          <span class="aviso-legal_info_data_item"></span>Nombre de la empresa:
+
+          <span class="aviso-legal_info_data_item">ConquerX LLC </span>
+          <span class="aviso-legal_info_data_item">EIN: 61-2051579 </span>
+          <span class="aviso-legal_info_data_item">
+            Dirección: 8 THE GREEN STE R, Dover, 19901, Delaware, USA</span
+          >
+        </p>
+        </section>
+      </aside>
+    </div>
+    <footer>Copyright © 2025 By ConquerX</footer>
+  </body>
+  <script type="module" src="/src/main.js"></script>
+</html>

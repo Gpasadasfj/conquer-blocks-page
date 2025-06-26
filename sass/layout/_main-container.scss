@@ -1,0 +1,19 @@
+@use "../abstracts/index" as *;
+
+.main-container {
+  padding: 1em;
+  text-align: center;
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include breakpoint(tablet) {
+    max-width: $bp-tablet;
+    padding: 2em;
+  }
+
+  @include breakpoint(desktop) {
+    max-width: $bp-desktop;
+    overflow: visible;
+  }
+}

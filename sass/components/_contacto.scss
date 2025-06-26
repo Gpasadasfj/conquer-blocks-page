@@ -1,0 +1,74 @@
+@use "../abstracts/index" as *;
+
+.contacto_page {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &_list {
+    &_buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 1em;
+      @include breakpoint(desktop) {
+        justify-content: center;
+        gap: 2em;
+      }
+    }
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &_input {
+        width: 80%;
+        border-radius: 5px;
+        color: #2a7b9b;
+
+        @include breakpoint(tablet) {
+          width: 40%;
+        }
+      }
+    }
+
+    &_button {
+      width: 80%;
+      margin: auto;
+      margin-top: 1em;
+
+      @include breakpoint(tablet) {
+        width: 40%;
+      }
+    }
+
+    &_iframe {
+      width: 100%;
+      border-radius: 50px;
+      margin-top: 1em;
+      border: none;
+
+      @include breakpoint(tablet) {
+        height: 400px;
+      }
+
+      @include breakpoint(desktop) {
+        height: 600px;
+      }
+    }
+  }
+}
+
+.aviso-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Curso de Desarrollo Full-Stack de ConquerBlocks</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Pagina principal de informacion sobre el curso de
+  desarrollo Full-Stack de ConquerBlocks"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <figure>
+        <img
+          src="../img/logo-conquerblocks-color.png"
+          alt="Logo de ConquerBlocks"
+          class="main-header_img"
+        />
+      </figure>
+
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        <label for="menu-toggle" class="main-header-burguer">☰</label>
+        <ul class="main-header_nav">
+          <li>
+            <a class="main-header_nav_item" href="../index.html">Home</a><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../quienes_somos.html"
+              >Quienes somos</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../cursos/cursos_index.html"
+              >Cursos</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../blog/blog_index.html"
+              >Blog</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../registro.html">Registro</a
+            ><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../login.html">Login</a><br />
+          </li>
+          <li>
+            <a class="main-header_nav_item" href="../contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <main>
+        <section class="curso-full-stack">
+          <h1 class="curso-full-stack_title">Curso de Desarrollo Full-Stack</h1>
+          <div class="curso-full-stack_container">
+            <figure>
+              <picture>
+                <source
+                  media="(min-width: 1201px)"
+                  srcset="../img/software-developer-1200.jpg"
+                />
+                <source
+                  media="(min-width: 801px) and (max-width: 1200px)"
+                  srcset="../img/software-developer-800.jpg"
+                />
+                <source
+                  media="(min-width: 601px) and (max-width: 800px)"
+                  srcset="../img/software-developer-600.jpg"
+                />
+                <source
+                  media="(max-width: 600px)"
+                  srcset="../img/software-developer-400.jpg"
+                />
+                <img
+                  class="curso-full-stack_img"
+                  src="img/numeros_respaldan-600.png"
+                  alt="Developer imagen"
+                />
+              </picture>
+            </figure>
+
+            <article class="curso-full-stack_contain">
+              <h2 class="curso-full-stack_contain_title">
+                El Máster en Desarrollo Full Stack que te garantiza un empleo
+                por contrato...
+              </h2>
+              <p class="curso-full-stack_contain_subtitle">
+                La formación donde aprenderás todo lo que necesitas para
+                convertirte en Desarrollador Full-Stack, aunque partas desde
+                cero en el mundo de la programación.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>Copyright © 2025 By ConquerX</footer>
+  </body>
+  <script type="module" src="/src/main.js"></script>
+</html>

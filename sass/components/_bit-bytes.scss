@@ -1,0 +1,46 @@
+@use "../abstracts/index" as *;
+
+.bit-bytes {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &_subtitle {
+    @include breakpoint(tablet) {
+      margin-top: 1em;
+    }
+
+    @include breakpoint(desktop) {
+      width: 40%;
+      margin: auto;
+    }
+  }
+
+  &_img {
+    border-radius: 50px;
+
+    @include breakpoint(desktop) {
+      width: 80%;
+    }
+  }
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    &_title2 {
+      margin-top: 1em;
+
+      &_contain {
+        @include breakpoint(desktop) {
+          display: flex;
+
+          figure {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@use "../abstracts/index" as *;
+
+.curso-full-stack {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &_container {
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      display: flex;
+      text-align: left;
+    }
+  }
+
+  &_img {
+    border-radius: 50px;
+    @include breakpoint(desktop) {
+      max-width: 80%;
+    }
+  }
+
+  &_contain {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    @include breakpoint(desktop) {
+      width: 60%;
+      margin-top: 2em;
+    }
+
+    &_title {
+      padding: 10px;
+      @include breakpoint(tablet) {
+        margin-top: 1em;
+      }
+    }
+  }
+}

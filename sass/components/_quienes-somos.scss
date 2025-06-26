@@ -1,0 +1,56 @@
+@use "../abstracts/index" as *;
+
+.quienes-somos_page {
+  text-align: center;
+  margin-top: 1em;
+
+  &_hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  &_img {
+    display: none;
+  }
+}
+
+.nuestro-equipo {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+  text-align: center;
+
+  &_title {
+    width: 60%;
+    margin: auto;
+  }
+
+  &_container {
+    @include breakpoint(desktop) {
+      display: grid;
+      grid-template: 1fr / repeat(3, 1fr);
+    }
+  }
+
+  &_item {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+
+    &_img {
+      grid-area: 1 / 1 / span 2 / span 1;
+
+      img {
+        width: 60%;
+        border-radius: 100%;
+
+        @include breakpoint(desktop) {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
