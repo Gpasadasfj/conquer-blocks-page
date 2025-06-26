@@ -18,7 +18,7 @@
 
   &_img {
     border-radius: 50px;
-    
+
     @include breakpoint(desktop) {
       width: 80%;
     }
@@ -33,10 +33,12 @@
       @include breakpoint(desktop) {
         display: flex;
         flex-direction: row;
+        figure {
+          width: 40%;
+        }
 
-    &_title2 {
-      margin-top: 2em;
-
+        &_title2 {
+          margin-top: 2em;
         }
       }
     }

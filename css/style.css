@@ -462,6 +462,9 @@ nav a {
     display: flex;
     flex-direction: row;
   }
+  .bit-bytes_item_contain figure {
+    width: 40%;
+  }
   .bit-bytes_item_contain_title2 {
     margin-top: 2em;
   }
