@@ -449,7 +449,7 @@ nav a {
 }
 @media (min-width: 1440px) {
   .bit-bytes_img {
-    width: 80%;
+    width: 40%;
   }
 }
 .bit-bytes_item {
@@ -457,15 +457,16 @@ nav a {
   flex-direction: column;
   gap: 1em;
 }
-.bit-bytes_item_title2 {
-  margin-top: 1em;
-}
 @media (min-width: 1440px) {
-  .bit-bytes_item_title2_contain {
+  .bit-bytes_item_contain {
     display: flex;
+    flex-direction: row;
   }
-  .bit-bytes_item_title2_contain figure {
+  .bit-bytes_item_contain figure {
     width: 40%;
+  }
+  .bit-bytes_item_contain_title2 {
+    margin-top: 1em;
   }
 }
 

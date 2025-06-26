@@ -18,7 +18,7 @@
 
   &_img {
     border-radius: 50px;
-
+    
     @include breakpoint(desktop) {
       width: 80%;
     }
@@ -29,16 +29,17 @@
     flex-direction: column;
     gap: 1em;
 
+    &_contain {
+      @include breakpoint(desktop) {
+        display: flex;
+        flex-direction: row;
+
+        figure {
+          width: 40%;
+        }
     &_title2 {
-      margin-top: 1em;
+      margin-top: 2em;
 
-      &_contain {
-        @include breakpoint(desktop) {
-          display: flex;
-
-          figure {
-            width: 40%;
-          }
         }
       }
     }
